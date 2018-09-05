@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Marché de Noël de Charleville-Mézières</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Montserrat:500" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome.min.css">
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="css/ken-burns.css">
