@@ -1,0 +1,264 @@
+/* line 1, ../scss/partials/_header.scss */
+body {
+  font: 14px/2 "Open sans",sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* line 6, ../scss/partials/_header.scss */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font: 12px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+/* line 21, ../scss/partials/_header.scss */
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+/* line 35, ../scss/partials/_header.scss */
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+/* line 39, ../scss/partials/_header.scss */
+.btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+/* line 44, ../scss/partials/_header.scss */
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+/* line 48, ../scss/partials/_header.scss */
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+/* line 55, ../scss/partials/_header.scss */
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+
+/* line 62, ../scss/partials/_header.scss */
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+/* line 69, ../scss/partials/_header.scss */
+.slideshow .slideshow-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 77, ../scss/partials/_header.scss */
+.slideshow .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* line 86, ../scss/partials/_header.scss */
+.slideshow .slide {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 98, ../scss/partials/_header.scss */
+.slideshow .slide.is-active {
+  display: block;
+}
+/* line 102, ../scss/partials/_header.scss */
+.slideshow .slide.is-loaded {
+  opacity: 1;
+}
+/* line 106, ../scss/partials/_header.scss */
+.slideshow .slide .caption {
+  padding: 0 100px;
+}
+/* line 110, ../scss/partials/_header.scss */
+.slideshow .slide .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: 1;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+/* line 121, ../scss/partials/_header.scss */
+.slideshow .slide .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 133, ../scss/partials/_header.scss */
+.slideshow .slide .image {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+/* line 140, ../scss/partials/_header.scss */
+.slideshow .slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 154, ../scss/partials/_header.scss */
+.slideshow .slide .title {
+  margin: 0 auto 15px;
+  max-width: 1000px;
+  font: 300 50px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+/* line 162, ../scss/partials/_header.scss */
+.slideshow .slide .text {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+/* line 169, ../scss/partials/_header.scss */
+.slideshow .slide .btn {
+  margin: 15px 0 0;
+  border-color: #fff;
+}
+/* line 173, ../scss/partials/_header.scss */
+.slideshow .slide .btn::before {
+  background: #fff;
+}
+/* line 179, ../scss/partials/_header.scss */
+.slideshow .pagination {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  cursor: default;
+  z-index: 2;
+  text-align: center;
+}
+/* line 189, ../scss/partials/_header.scss */
+.slideshow .pagination .item {
+  display: inline-block;
+  padding: 15px 5px;
+  position: relative;
+  width: 46px;
+  height: 32px;
+  cursor: pointer;
+  text-indent: -999em;
+  z-index: 1;
+}
+/* line 199, ../scss/partials/_header.scss */
+.slideshow .pagination .item + .page {
+  margin-left: -2px;
+}
+/* line 203, ../scss/partials/_header.scss */
+.slideshow .pagination .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 36px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+/* line 215, ../scss/partials/_header.scss */
+.slideshow .pagination .item::after {
+  width: 0;
+  background: #fff;
+  z-index: 2;
+  transition: width 0.2s ease;
+}
+/* line 222, ../scss/partials/_header.scss */
+.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+  background-color: #fff;
+}
+/* line 230, ../scss/partials/_header.scss */
+.slideshow .arrows .arrow {
+  margin: -33px 0 0;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+/* line 234, ../scss/partials/_header.scss */
+.slideshow .arrows .prev {
+  left: 30px;
+}
+/* line 237, ../scss/partials/_header.scss */
+.slideshow .arrows .prev:hover .svg {
+  left: -10px;
+}
+/* line 242, ../scss/partials/_header.scss */
+.slideshow .arrows .next {
+  right: 30px;
+}
+/* line 245, ../scss/partials/_header.scss */
+.slideshow .arrows .next:hover .svg {
+  left: 10px;
+}
+/* line 250, ../scss/partials/_header.scss */
+.slideshow .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 14px;
+  height: 26px;
+  fill: #fff;
+  transition: left 0.2s ease;
+}
