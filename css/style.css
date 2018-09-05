@@ -1,265 +1,64 @@
-/* line 1, ../scss/partials/_header.scss */
-body {
-  font: 14px/2 "Open sans",sans-serif;
-  letter-spacing: 0.05em;
-  background-color: yellow;
+/* line 5, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-/* line 7, ../scss/partials/_header.scss */
-.btn {
-  display: inline-block;
-  padding: 13px 20px;
-  color: #fff;
-  text-decoration: none;
-  position: relative;
-  background: transparent;
-  border: 1px solid #e1e1e1;
-  font: 12px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.4em;
-  text-align: center;
-  text-indent: 2px;
-  text-transform: uppercase;
-  transition: color 0.1s linear 0.05s;
-}
-/* line 22, ../scss/partials/_header.scss */
-.btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #e1e1e1;
-  z-index: 1;
-  opacity: 0;
-  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
-}
-/* line 36, ../scss/partials/_header.scss */
-.btn::after {
-  transition: border 0.1s linear 0.05s;
-}
-/* line 40, ../scss/partials/_header.scss */
-.btn .btn-inner {
-  position: relative;
-  z-index: 2;
-}
-/* line 45, ../scss/partials/_header.scss */
-.btn:hover {
-  color: #373737;
-  transition: color 0.1s linear 0s;
-}
-/* line 49, ../scss/partials/_header.scss */
-.btn:hover::before {
-  top: 0;
-  height: 100%;
-  opacity: 1;
-  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
-}
-/* line 56, ../scss/partials/_header.scss */
-.btn:hover::after {
-  border-color: #373737;
-  transition: border 0.1s linear 0s;
+/* line 22, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
-/* line 63, ../scss/partials/_header.scss */
-.slideshow {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
+/* line 24, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
 }
-/* line 70, ../scss/partials/_header.scss */
-.slideshow .slideshow-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+/* line 26, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-/* line 78, ../scss/partials/_header.scss */
-.slideshow .slides {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+
+/* line 28, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
 }
-/* line 87, ../scss/partials/_header.scss */
-.slideshow .slide {
-  display: none;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+
+/* line 30, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
 }
-/* line 99, ../scss/partials/_header.scss */
-.slideshow .slide.is-active {
-  display: block;
-}
-/* line 103, ../scss/partials/_header.scss */
-.slideshow .slide.is-loaded {
-  opacity: 1;
-}
-/* line 107, ../scss/partials/_header.scss */
-.slideshow .slide .caption {
-  padding: 0 100px;
-}
-/* line 111, ../scss/partials/_header.scss */
-.slideshow .slide .image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  z-index: 1;
-  background-size: cover;
-  image-rendering: optimizeQuality;
-}
-/* line 122, ../scss/partials/_header.scss */
-.slideshow .slide .image-container::before {
+/* line 103, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
   content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-/* line 134, ../scss/partials/_header.scss */
-.slideshow .slide .image {
-  width: 100%;
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-/* line 141, ../scss/partials/_header.scss */
-.slideshow .slide-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 155, ../scss/partials/_header.scss */
-.slideshow .slide .title {
-  margin: 0 auto 15px;
-  max-width: 1000px;
-  font: 300 50px/1.2 "Oswald", sans-serif;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-}
-/* line 163, ../scss/partials/_header.scss */
-.slideshow .slide .text {
-  margin: 0 auto;
-  max-width: 1000px;
-  font-size: 18px;
-  line-height: 1.4;
-}
-/* line 170, ../scss/partials/_header.scss */
-.slideshow .slide .btn {
-  margin: 15px 0 0;
-  border-color: #fff;
-}
-/* line 174, ../scss/partials/_header.scss */
-.slideshow .slide .btn::before {
-  background: #fff;
-}
-/* line 180, ../scss/partials/_header.scss */
-.slideshow .pagination {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  width: 100%;
-  height: 12px;
-  cursor: default;
-  z-index: 2;
-  text-align: center;
-}
-/* line 190, ../scss/partials/_header.scss */
-.slideshow .pagination .item {
-  display: inline-block;
-  padding: 15px 5px;
-  position: relative;
-  width: 46px;
-  height: 32px;
-  cursor: pointer;
-  text-indent: -999em;
-  z-index: 1;
-}
-/* line 200, ../scss/partials/_header.scss */
-.slideshow .pagination .item + .page {
-  margin-left: -2px;
-}
-/* line 204, ../scss/partials/_header.scss */
-.slideshow .pagination .item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  width: 36px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.5);
-  transition: background 0.2s ease;
-}
-/* line 216, ../scss/partials/_header.scss */
-.slideshow .pagination .item::after {
-  width: 0;
-  background: #fff;
-  z-index: 2;
-  transition: width 0.2s ease;
-}
-/* line 223, ../scss/partials/_header.scss */
-.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
-  background-color: #fff;
-}
-/* line 231, ../scss/partials/_header.scss */
-.slideshow .arrows .arrow {
-  margin: -33px 0 0;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  z-index: 3;
-}
-/* line 235, ../scss/partials/_header.scss */
-.slideshow .arrows .prev {
-  left: 30px;
-}
-/* line 238, ../scss/partials/_header.scss */
-.slideshow .arrows .prev:hover .svg {
-  left: -10px;
-}
-/* line 243, ../scss/partials/_header.scss */
-.slideshow .arrows .next {
-  right: 30px;
-}
-/* line 246, ../scss/partials/_header.scss */
-.slideshow .arrows .next:hover .svg {
-  left: 10px;
-}
-/* line 251, ../scss/partials/_header.scss */
-.slideshow .arrows .svg {
-  position: relative;
-  left: 0;
-  width: 14px;
-  height: 26px;
-  fill: #fff;
-  transition: left 0.2s ease;
 }
