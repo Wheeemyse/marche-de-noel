@@ -375,7 +375,7 @@ nav ul li {
 
 /* line 22, ../scss/partials/_navbar.scss */
 nav ul li:hover {
-  background: rgba(0, 68, 19, 0.4);
+  background: rgba(0, 68, 19, 0.8);
 }
 
 /* line 25, ../scss/partials/_navbar.scss */
@@ -387,28 +387,18 @@ nav ul {
   z-index: 100;
 }
 
-/* line 32, ../scss/partials/_navbar.scss */
-nav div {
-  position: absolute;
-  left: 0;
-  background: rgba(0, 68, 19, 0.8);
-  width: 140px;
-  height: 55px;
-  z-index: 99;
-}
-
-/* line 40, ../scss/partials/_navbar.scss */
+/* line 33, ../scss/partials/_navbar.scss */
 nav a:link {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* line 44, ../scss/partials/_navbar.scss */
+/* line 37, ../scss/partials/_navbar.scss */
 nav ul li a {
   color: #fff;
 }
 
-/* line 47, ../scss/partials/_navbar.scss */
+/* line 40, ../scss/partials/_navbar.scss */
 nav ul li a:visited {
   color: #6A9519;
 }

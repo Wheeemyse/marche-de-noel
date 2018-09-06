@@ -20,7 +20,7 @@ nav ul li{
   -webkit-transition:all .2s;
 }
 nav ul li:hover{
-  background:rgba(0,68,19,.4);
+  background:rgba(0,68,19,.8);
 }
 nav ul{
   border-bottom: 1px solid #fff;
@@ -29,14 +29,7 @@ nav ul{
   padding:0;
   z-index:100;
 }
-nav div{
-  position:absolute;
-  left:0;
-  background:rgba(0,68,19,.8);
-  width:140px;
-  height:55px;
-  z-index:99;
-}
+
 nav a:link{
   text-decoration:none;
   color:#ffffff;
