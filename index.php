@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <header>
     <?php include('includes/header.html'); ?>
   </header>
   <body>
-    <h1>Bienvenue dans le monde magique de Noël et des légendes Ardennaises</h1>
+    <h1 class="welcome">Bienvenue dans le monde magique <br> des légendes ardennaises et de Noël!</h1>
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/header.js">
+  <script type="text/javascript" src="js/header.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"> </script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  </script>
+
 </html>
