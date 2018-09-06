@@ -15,17 +15,14 @@
   </head>
 
   <header>
-    <?php include('includes/header.html'); ?>
+      <?php include('includes/navbar.php'); ?>
+      <?php include('includes/header.html'); ?>
   </header>
   <body>
     <h1 class="welcome">Bienvenue dans le monde magique <br> des légendes ardennaises et de Noël!</h1>
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<<<<<<< HEAD
   <script type="text/javascript" src="js/header.js"></script>
-=======
-  <script type="text/javascript" src="js/navbar.js"></script>
->>>>>>> 839b8fa7ccd6a08d4f3abaa9890ad53d2b426015
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"> </script>
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
