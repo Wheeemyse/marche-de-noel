@@ -353,52 +353,72 @@ section {
 }
 
 /* line 5, ../scss/partials/_navbar.scss */
-nav {
-  width: 100%;
+.onglet a {
+  color: #6A9519;
 }
 
 /* line 8, ../scss/partials/_navbar.scss */
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  width: 140px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px dashed rgba(255, 255, 255, 0);
-  color: #fff;
-  padding: 20px 0 20px 0;
-  margin: -1px -2px -1px -1px;
-  cursor: pointer;
-  transition: all .2s;
-  -webkit-transition: all .2s;
+nav {
+  width: 100%;
 }
-
-/* line 22, ../scss/partials/_navbar.scss */
-nav ul li:hover {
-  background: rgba(0, 68, 19, 0.8);
-}
-
-/* line 25, ../scss/partials/_navbar.scss */
+/* line 10, ../scss/partials/_navbar.scss */
 nav ul {
+  text-align: center;
+  font-size: 1.6rem;
   border-bottom: 1px solid #fff;
   position: absolute;
   width: 100%;
   padding: 0;
   z-index: 100;
 }
-
-/* line 33, ../scss/partials/_navbar.scss */
-nav a:link {
+/* line 18, ../scss/partials/_navbar.scss */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  width: 125px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px dashed rgba(255, 255, 255, 0);
+  padding: 20px 0 20px 0;
+  margin: -1px -2px -1px -1px;
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+}
+/* line 30, ../scss/partials/_navbar.scss */
+nav ul li:hover {
+  background: rgba(0, 68, 19, 0.8);
+}
+/* line 32, ../scss/partials/_navbar.scss */
+nav ul li:hover a {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* line 37, ../scss/partials/_navbar.scss */
-nav ul li a {
-  color: #fff;
+/* line 40, ../scss/partials/_navbar.scss */
+nav li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.5rem;
 }
 
-/* line 40, ../scss/partials/_navbar.scss */
-nav ul li a:visited {
-  color: #6A9519;
+/* line 45, ../scss/partials/_navbar.scss */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+}
+
+/* line 54, ../scss/partials/_navbar.scss */
+.dropdown-menu.active {
+  display: block;
+}
+
+/* line 57, ../scss/partials/_navbar.scss */
+.dropdown-menu a {
+  width: 150px;
 }
