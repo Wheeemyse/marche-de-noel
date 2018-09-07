@@ -8,13 +8,33 @@ body {
   background-color: #232539;
 }
 
-/* line 7, ../scss/index.scss */
+/* line 8, ../scss/index.scss */
 .welcome {
   width: 100%;
   padding: 50px;
   text-align: center;
-  font-size: 8.5rem;
-  color: #fff;
+  font-size: 6vw;
+  color: #D8B43F;
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
+}
+
+/* line 17, ../scss/index.scss */
+.planmdn {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 24, ../scss/index.scss */
+.plan {
+  justify-content: center;
+}
+
+/* line 27, ../scss/index.scss */
+.dlplan {
+  margin-top: 25px;
+  text-align: center;
 }
