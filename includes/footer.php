@@ -20,15 +20,10 @@
 				<p class="footer-company-name">Mairie de charleville &copy; 2018</p>
 
 				<div class="footer-icons">
-					<!-- <a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-google-plus-square"></i></a> -->
-
-					<div class="icons-fb ich"></div>
-					<div class="icons-ig ich"></div>
-					<div class="icons-tw ich"></div>
-					<div class="icons-yt ich"></div>
+					<a href="#"><i class="fa fa-google-plus-square"></i></a>
 				</div>
 			</div>
 
