@@ -357,79 +357,124 @@ section {
   color: #6A9519;
 }
 
-/* line 8, ../scss/partials/_navbar.scss */
-nav {
-  width: 100%;
-}
-/* line 10, ../scss/partials/_navbar.scss */
-nav ul {
-  text-align: center;
-  font-size: 1.6rem;
-  border-bottom: 1px solid #fff;
-  position: absolute;
-  width: 100%;
-  padding: 0;
-  z-index: 100;
-}
-/* line 18, ../scss/partials/_navbar.scss */
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  width: 125px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px dashed rgba(255, 255, 255, 0);
-  padding: 20px 0 20px 0;
-  margin: -1px -2px -1px -1px;
-  cursor: pointer;
-  transition: all .2s;
-  -webkit-transition: all .2s;
-}
-/* line 30, ../scss/partials/_navbar.scss */
-nav ul li:hover {
-  background: rgba(0, 68, 19, 0.8);
-}
-/* line 32, ../scss/partials/_navbar.scss */
-nav ul li:hover a {
-  text-decoration: none;
-  color: #ffffff;
+/*nav {
+	width:100%;
+	ul {
+		text-align: center;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #fff;
+    position:absolute;
+    width:100%;
+    padding:0;
+    z-index:100;
+	  li {
+      display:inline-block;
+      list-style:none;
+      width:125px;
+      text-align:center;
+      font-family:'Montserrat', sans-serif;
+      border: 1px dashed rgba(255,255,255, 0);
+      padding:20px 0 20px 0;
+      margin:-1px -2px -1px -1px;
+      cursor:pointer;
+      transition:all .2s;
+      -webkit-transition:all .2s;
+			&:hover {
+				background:rgba(0,68,19,.8);
+				a {
+          text-decoration:none;
+          color:#ffffff;
+				}
+			}
+		}
+  }
 }
 
-/* line 41, ../scss/partials/_navbar.scss */
 .button-dropdown {
-  position: relative;
+    position: relative;
 }
-
-/* line 44, ../scss/partials/_navbar.scss */
 li a span {
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 1.6rem;
-  color: #6A9519;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.6rem;
+    color: #6A9519;
 }
-
-/* line 50, ../scss/partials/_navbar.scss */
 li a:hover span, .nav li a.dropdown-toggle.active span {
-  color: #fff;
+    color: #fff;
+}
+li .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    text-align: left;
+}
+ul li .dropdown-menu.active {
+    display: block;
+}
+ul li .dropdown-menu a {
+    width: 150px;
+}*/
+/* line 69, ../scss/partials/_navbar.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* line 53, ../scss/partials/_navbar.scss */
-li .dropdown-menu {
+/* line 77, ../scss/partials/_navbar.scss */
+li {
+  float: left;
+}
+
+/* line 81, ../scss/partials/_navbar.scss */
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* line 89, ../scss/partials/_navbar.scss */
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* line 93, ../scss/partials/_navbar.scss */
+li.dropdown {
+  display: inline-block;
+}
+
+/* line 97, ../scss/partials/_navbar.scss */
+.dropdown-content {
   display: none;
   position: absolute;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  margin-top: 3px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* line 106, ../scss/partials/_navbar.scss */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   text-align: left;
 }
 
-/* line 62, ../scss/partials/_navbar.scss */
-ul li .dropdown-menu.active {
-  display: block;
+/* line 114, ../scss/partials/_navbar.scss */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-/* line 65, ../scss/partials/_navbar.scss */
-ul li .dropdown-menu a {
-  width: 150px;
+/* line 116, ../scss/partials/_navbar.scss */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
