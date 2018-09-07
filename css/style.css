@@ -395,15 +395,41 @@ nav ul li:hover a {
   color: #ffffff;
 }
 
-/* line 40, ../scss/partials/_navbar.scss */
-nav li a span {
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 1.5rem;
+/* line 41, ../scss/partials/_navbar.scss */
+ul .button-dropdown {
+  position: relative;
 }
 
 /* line 45, ../scss/partials/_navbar.scss */
-.dropdown-menu {
+ul li a {
+  display: block;
+  color: #333;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* line 53, ../scss/partials/_navbar.scss */
+ul li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  color: #999;
+}
+
+/* line 60, ../scss/partials/_navbar.scss */
+ul li a:hover, ul li a.dropdown-toggle.active {
+  background-color: #289dcc;
+  color: #fff;
+}
+
+/* line 65, ../scss/partials/_navbar.scss */
+ul li a:hover span, .nav li a.dropdown-toggle.active span {
+  color: #fff;
+}
+
+/* line 69, ../scss/partials/_navbar.scss */
+ul li .dropdown-menu {
   display: none;
   position: absolute;
   left: 0;
@@ -413,12 +439,12 @@ nav li a span {
   text-align: left;
 }
 
-/* line 54, ../scss/partials/_navbar.scss */
-.dropdown-menu.active {
+/* line 79, ../scss/partials/_navbar.scss */
+ul li .dropdown-menu.active {
   display: block;
 }
 
-/* line 57, ../scss/partials/_navbar.scss */
-.dropdown-menu a {
+/* line 83, ../scss/partials/_navbar.scss */
+ul li .dropdown-menu a {
   width: 150px;
 }
