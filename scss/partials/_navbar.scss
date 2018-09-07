@@ -5,7 +5,7 @@ section{
 .onglet a {
   color:#6A9519;
 }
-/*nav {
+nav {
 	width:100%;
 	ul {
 		text-align: center;
@@ -38,7 +38,17 @@ section{
   }
 }
 
-.button-dropdown {
+li a span {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.6rem;
+    color: #6A9519;
+}
+li a:hover span, .nav li a.dropdown.active span {
+    color: #fff;
+}
+
+/*.button-dropdown {
     position: relative;
 }
 li a span {
