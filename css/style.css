@@ -354,7 +354,7 @@ section {
 
 /* line 5, ../scss/partials/_navbar.scss */
 .onglet a {
-  color: #6A9519;
+  color: #E95E3F;
   text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   list-style: none;
-  width: 125px;
+  width: 150px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   border: 1px dashed rgba(255, 255, 255, 0);
@@ -388,7 +388,7 @@ nav ul li {
 }
 /* line 31, ../scss/partials/_navbar.scss */
 nav ul li:hover {
-  background: rgba(0, 68, 19, 0.8);
+  background-image: linear-gradient(#846828, #D8B43F);
 }
 /* line 33, ../scss/partials/_navbar.scss */
 nav ul li:hover a {
