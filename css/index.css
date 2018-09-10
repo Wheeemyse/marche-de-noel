@@ -6,6 +6,7 @@
   width: 100%;
   font: bold 16px sans-serif;
   text-align: left;
+  margin-top: 15px;
   padding: 50px 60px 40px;
   overflow: hidden;
 }
@@ -76,12 +77,12 @@
 }
 
 /* Footer Right */
-/* line 78, ../scss/partials/_footer.scss */
+/* line 77, ../scss/partials/_footer.scss */
 .footer-distributed .footer-right {
   float: right;
 }
 
-/* line 82, ../scss/partials/_footer.scss */
+/* line 81, ../scss/partials/_footer.scss */
 .footer-distributed .footer-right p {
   display: inline-block;
   vertical-align: top;
@@ -90,18 +91,18 @@
 }
 
 /* The contact form */
-/* line 91, ../scss/partials/_footer.scss */
+/* line 90, ../scss/partials/_footer.scss */
 .footer-distributed form {
   display: inline-block;
 }
 
-/* line 95, ../scss/partials/_footer.scss */
+/* line 94, ../scss/partials/_footer.scss */
 .footer-distributed form input,
 .footer-distributed form textarea {
   display: block;
   border-radius: 3px;
   box-sizing: border-box;
-  background-color: #083150;
+  background-color: #232539;
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
   border: none;
   resize: none;
@@ -113,35 +114,35 @@
   padding: 18px;
 }
 
-/* line 114, ../scss/partials/_footer.scss */
+/* line 113, ../scss/partials/_footer.scss */
 .footer-distributed ::-webkit-input-placeholder {
   color: #fff;
 }
 
-/* line 118, ../scss/partials/_footer.scss */
+/* line 117, ../scss/partials/_footer.scss */
 .footer-distributed ::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
 
-/* line 123, ../scss/partials/_footer.scss */
+/* line 122, ../scss/partials/_footer.scss */
 .footer-distributed :-ms-input-placeholder {
   color: #fff;
 }
 
-/* line 128, ../scss/partials/_footer.scss */
+/* line 127, ../scss/partials/_footer.scss */
 .footer-distributed form input {
   height: 55px;
   margin-bottom: 15px;
 }
 
-/* line 133, ../scss/partials/_footer.scss */
+/* line 132, ../scss/partials/_footer.scss */
 .footer-distributed form textarea {
   height: 100px;
   margin-bottom: 20px;
 }
 
-/* line 138, ../scss/partials/_footer.scss */
+/* line 137, ../scss/partials/_footer.scss */
 .footer-distributed form button {
   border-radius: 3px;
   background-color: #083150;
@@ -154,34 +155,34 @@
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 1000px) {
-  /* line 152, ../scss/partials/_footer.scss */
+  /* line 151, ../scss/partials/_footer.scss */
   .footer-distributed {
     font: bold 14px sans-serif;
   }
 
-  /* line 156, ../scss/partials/_footer.scss */
+  /* line 155, ../scss/partials/_footer.scss */
   .footer-distributed .footer-company-name {
     font-size: 12px;
   }
 
-  /* line 160, ../scss/partials/_footer.scss */
+  /* line 159, ../scss/partials/_footer.scss */
   .footer-distributed form input,
   .footer-distributed form textarea {
     width: 250px;
   }
 
-  /* line 165, ../scss/partials/_footer.scss */
+  /* line 164, ../scss/partials/_footer.scss */
   .footer-distributed form button {
     padding: 10px 35px;
   }
 }
 @media (max-width: 800px) {
-  /* line 173, ../scss/partials/_footer.scss */
+  /* line 172, ../scss/partials/_footer.scss */
   .footer-distributed {
     padding: 30px;
   }
 
-  /* line 177, ../scss/partials/_footer.scss */
+  /* line 176, ../scss/partials/_footer.scss */
   .footer-distributed .footer-left,
   .footer-distributed .footer-right {
     float: none;
@@ -189,39 +190,42 @@
     margin: 0 auto;
   }
 
-  /* line 184, ../scss/partials/_footer.scss */
+  /* line 183, ../scss/partials/_footer.scss */
   .footer-distributed .footer-left {
     margin-bottom: 40px;
   }
 
-  /* line 188, ../scss/partials/_footer.scss */
+  /* line 187, ../scss/partials/_footer.scss */
   .footer-distributed form {
     margin-top: 30px;
   }
 
-  /* line 192, ../scss/partials/_footer.scss */
+  /* line 191, ../scss/partials/_footer.scss */
   .footer-distributed form {
     display: block;
   }
 
-  /* line 196, ../scss/partials/_footer.scss */
+  /* line 195, ../scss/partials/_footer.scss */
   .footer-distributed form button {
     float: none;
   }
 
-  /* line 199, ../scss/partials/_footer.scss */
+  /* line 198, ../scss/partials/_footer.scss */
   .retourhaut {
     top: 5px;
   }
 }
-/* line 203, ../scss/partials/_footer.scss */
+/* line 202, ../scss/partials/_footer.scss */
 .retourhaut {
   float: right;
   font-size: 5rem !important;
+  color: #D0AE3F;
 }
 
-/* line 207, ../scss/partials/_footer.scss */
+/* line 206, ../scss/partials/_footer.scss */
 .retourhaut:hover {
+  text-decoration: none;
+  color: #D0AE3F;
   text-decoration: none;
 }
 
@@ -267,4 +271,12 @@ body {
   display: block;
   text-align: center;
   color: #D8B43F;
+}
+
+/* line 35, ../scss/index.scss */
+.captionplan {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: gold;
 }

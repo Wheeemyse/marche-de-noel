@@ -24,6 +24,7 @@
   <body>
     <h1 class="welcome">Bienvenue dans le monde magique <br> des légendes ardennaises et de Noël!</h1>
     <div class="plan">
+      <p class="captionplan">Plan interactif du marché de Noël</p>
       <img class="planmdn" src="img/plan-mdn.jpg" alt="Plan du marché de Noël">
       <a class="plandl" href="img/plan-mdn.jpg" download="plan-mdn" >Telecharger le plan du marché de Noël</a>
     </div>

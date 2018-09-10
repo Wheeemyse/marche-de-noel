@@ -7,7 +7,7 @@
 					·
 					<a href="#">Programme</a>
 					·
-					<a href="#">Legendes ardennaises</a>
+					<a href="#">Légendes ardennaises</a>
 					·
 					<a href="#">Animations</a>
 					·
@@ -23,7 +23,8 @@
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-google-plus-square"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a><br>
+					<img src="img/logoville.jpg" alt="Logo charleville-mezieres">
 				</div>
 			</div>
 
